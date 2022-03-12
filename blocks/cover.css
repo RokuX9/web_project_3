@@ -23,7 +23,6 @@
 }
 
 .cover__background {
-    aspect-ratio: 4/3;
     animation: fade-in .3s ease 1 forwards;
 }
 
