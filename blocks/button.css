@@ -1,0 +1,22 @@
+@keyframes button-hover {
+    0% {
+        background: #0278fe;
+    }   
+    
+    100%{
+    }
+}
+
+.button {
+    background: #0278fe;
+    border-radius: 4px;
+    color: white;
+    padding: 13px 20px;
+    font-size: 18px;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #0063D2;
+}

@@ -1,0 +1,101 @@
+.place {
+    display: grid;
+    grid-template-columns: 460px 484px;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 48px;
+    column-gap: 40px;
+    grid-area: 
+    "place__title place__website"
+    "place__image place__text"
+    "place__nft place__text";
+    margin: 0;
+}
+
+.place__title {
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 76px;
+    margin: 0;
+}
+
+.place__website {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+}
+
+.place__url-heading {
+    margin: 0;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.12em;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    color: #AAAAAA;
+}
+
+.place__artist {
+    margin: 0;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.place__image {
+    max-width: 100%;
+}
+
+.place__text {
+    font-size: 18px;
+    line-height: 29px;
+    display: flex;
+    flex-flow: column;
+    row-gap: 25px;
+}
+
+.place__paragraph {
+    margin: 0;
+}
+
+
+@media screen and (max-width: 1279px) {
+    .place {
+        grid-template-columns: 340px 352px;
+        row-gap: 46px;
+        column-gap: 28px;
+    }
+
+
+    .place__title {
+        font-size: 42px;
+        line-height: 46px;
+    }
+
+    .place__text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .place {
+        display: flex;
+        flex-flow: column;
+        row-gap: 30px;
+    }
+
+    .place__title {
+        padding: 0 16px 0 16px;
+    }
+
+    .place__website {
+        padding: 0 16px 0 16px;
+    }
+
+    .place__text {
+        padding: 0 16px 0 16px;
+    }
+
+    .place__nft {
+        padding: 0 16px 0 16px;
+    }
+}
