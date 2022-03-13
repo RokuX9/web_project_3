@@ -1,22 +1,15 @@
-@keyframes button-hover {
-    0% {
-        background: #0278fe;
-    }   
-    
-    100%{
-    }
-}
 
 .button {
-    background: #0278fe;
+    background-color: #0278fe;
     border-radius: 4px;
     color: white;
     padding: 13px 20px;
     font-size: 18px;
     line-height: 18px;
     text-decoration: none;
+    transition: background-color .2s;
 }
 
 .button:hover {
-    background: #0063D2;
+    background-color: #0063D2;
 }
