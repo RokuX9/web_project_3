@@ -1,11 +1,11 @@
 .cover {
     padding: 105px 48px 0 48px;
     position: relative;
-    overflow: hidden;
 }
 
 .cover__background {
     transition: opacity .3s;
+    max-width: 100%;
 }
 
 .cover:hover .cover__background {
@@ -58,10 +58,6 @@
         padding: 105px 0 0 0;
     }
 
-    .cover__background {
-        transform: translate(-15%, 0);
-    }
-
     .cover__main {
         padding: 105px 0 0 0;
     }
@@ -71,11 +67,6 @@
 @media screen and (max-width: 767px) {
     .cover {
         padding: 77px 0 0 0;
-    }
-
-    .cover__background {
-        max-width: 100%;
-        transform: none;
     }
 
     .cover__main {
