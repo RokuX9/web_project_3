@@ -1,5 +1,6 @@
 @import url("../vendor/inter/inter.css");
 @import url("../vendor/normalize.css");
+@import url("../blocks/background.css");
 @import url("../blocks/place.css");
 @import url("../blocks/button.css");
 @import url("../blocks/page.css");
@@ -9,7 +10,3 @@
 @import url("../blocks/places.css");
 @import url("../blocks/cover.css");
 @import url("../blocks/footer.css");
-
-body {
-    background-color: #2A2C2F;
-}

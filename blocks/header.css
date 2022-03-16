@@ -7,6 +7,7 @@
 
 .header__logo {
     padding: 34px 357px 0 357px;
+    max-width: -webkit-fill-available;
 }
 
 .header__title {
