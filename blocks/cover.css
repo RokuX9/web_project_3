@@ -1,26 +1,27 @@
 .cover {
-    padding: 105px 48px 0 48px;
+    margin: 105px 48px 0 48px;
+    padding: 243px 264px;
     position: relative;
+    background-image: url("../images/cover-image.png");
+    background-size: cover;
+    background-position: center;
 }
 
-.cover__background {
+.cover__overlay {
     transition: opacity .3s;
-    max-width: 100%;
-}
-
-.cover:hover .cover__background {
-   opacity: .3;
-}
-
-.cover__main {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     height: -webkit-fill-available;
     width: -webkit-fill-available;
-    z-index: 1;
-    padding: 105px 48px 0 48px;
+    background-color: #2A2C2F;
+    opacity: 0;
 }
+
+.cover:hover .cover__overlay {
+   opacity: .7;
+}
+
 
 .cover__text {
     display: flex;
@@ -28,6 +29,8 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 .cover__title {
@@ -48,33 +51,27 @@
     margin: 0;
 }
 
-.cover__button-container {
-    padding-top: 45px;
+.cover__button {
+    margin-top: 45px;
+    width: fit-content;
 }
 
 
 @media screen and (max-width: 1279px) {
     .cover {
-        padding: 105px 0 0 0;
-    }
-
-    .cover__main {
-        padding: 105px 0 0 0;
+        margin: 105px 0 0 0;
+        padding: 264px 56px;
     }
 
 }
 
 @media screen and (max-width: 767px) {
     .cover {
-        padding: 77px 0 0 0;
-    }
-
-    .cover__main {
-        padding: 77px 0 0 0;
+        margin: 77px 0 0 0;
+        padding: 46px 16px;
     }
 
     .cover__title {
-        font-weight: 900;
         font-size: 32px;
         line-height: 35px;
     }
@@ -85,8 +82,8 @@
         line-height: 16px;
     }
 
-    .cover__button-container {
-        padding-top: 29px;
+    .cover__button {
+        margin-top: 16px;
     }
 
 }

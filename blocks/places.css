@@ -1,20 +1,5 @@
 .places {
-    padding: 118px 48px 0 48px;
-}
-
-.places__photo-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 16px;
-}
-
-.places__photo {
-    width: 100%;
-}
-
-.places__container {
-    padding: 92px 97px 0 97px;
+    padding: 92px 145px 0 145px;
     display: flex;
     flex-flow: column;
     row-gap: 93px;
@@ -23,34 +8,14 @@
 @media screen and (max-width: 1279px) {
 
     .places {
-        padding: 90px 24px 0 24px;
-    }
-
-    .places__photo-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-    }
-
-    .places__container {
-        padding: 88px 0 0 0;
+        padding: 88px 24px 0 24px;
         row-gap: 116px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    
+
     .places {
-        padding: 90px 0 0 0;
-    }
-
-    .places__photo-grid {
-        display: flex;
-        flex-flow: column;
-        row-gap: 12px;
-        padding: 0 16px 0 16px;
-    }
-
-    .places__container {
         padding: 62px 0 0 0;
         row-gap: 63px;
     }

@@ -1,10 +1,10 @@
 .place {
     display: grid;
     grid-template-columns: 460px 484px;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: auto auto 1fr;
     row-gap: 48px;
     column-gap: 40px;
-    grid-area: 
+    grid-template-areas: 
     "place__title place__website"
     "place__image place__text"
     "place__nft place__text";
@@ -16,12 +16,14 @@
     font-size: 72px;
     line-height: 76px;
     margin: 0;
+    grid-area: place__title;
 }
 
 .place__website {
     display: flex;
     flex-flow: column;
     justify-content: flex-end;
+    grid-area: place__website;
 }
 
 .place__url-heading {
@@ -42,6 +44,7 @@
 
 .place__image {
     max-width: 100%;
+    grid-area: place__image;
 }
 
 .place__text {
@@ -50,10 +53,15 @@
     display: flex;
     flex-flow: column;
     row-gap: 25px;
+    grid-area: place__text;
 }
 
 .place__paragraph {
     margin: 0;
+}
+
+.place__nft {
+    grid-area: place__nft;
 }
 
 
@@ -85,6 +93,8 @@
 
     .place__title {
         padding: 0 16px 0 16px;
+        font-size: 32px;
+        line-height: 35px;
     }
 
     .place__website {
